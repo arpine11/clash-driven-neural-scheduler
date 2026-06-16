@@ -1,0 +1,39 @@
+rye-s-93
+========
+
+Configuration
+  N courses     = 486
+  P slots       = 23  (torus T^N, cyclic period P)
+  state-space   ~ P^N = 23^486
+  Hopfield cap  = floor(0.14*N) = 68 patterns
+
+Sensitivity metrics
+  verdict                 : SENSITIVE
+  S = max|dE/dparam|/<E> : 1.1798  (threshold 0.05)
+  <E> across (h,d) grid   : 11.87
+  sigma(E)                : 7.85
+  max |dE/dh|             : 14.000  (per added Hopfield kick)
+  max |dE/dd|             : 0.18000  (per added dynamic step)
+  rel Hamming  d_H / N    : 0.8723  (Lyapunov-spread surrogate)
+
+Physical regime
+  Strongly chaotic / ergodic regime.
+  ~87% of courses land in different slots across (h, d) configs.
+  Trajectories explore many basins; final attractor is protocol-selected.
+  Discrete-state analog of fully developed chaos (positive Lyapunov spread).
+
+Kick-amplitude (shift) sweep at (h=5, d=500)
+  E(K=1) = 6094   E(K=22) = 6   ratio = 1015.67
+  Strong Chirikov-like transition: small kicks trap the system,
+  large kicks unlock ergodic mixing.
+
+Storage-depth sweep at (h=5, d=500)
+  optimal p ~= 3  (E_min = 6)
+  capacity wall alpha_c*N = 68 -> spurious-minima crossover.
+
+Convergence traces (d=500)
+  h= 0  E_min =    6  at t =  140  E_final =  104
+  h= 2  E_min =    6  at t =  140  E_final =  186
+  h= 5  E_min =    6  at t =  252  E_final =   70
+  h=10  E_min =   12  at t =  286  E_final =   58
+  h=20  E_min =    2  at t =  335  E_final =   56

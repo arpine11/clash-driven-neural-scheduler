@@ -1,0 +1,22 @@
+pur-s-93
+========
+
+Configuration
+  N courses     = 2419
+  P slots       = 42  (torus T^N, cyclic period P)
+  state-space   ~ P^N = 42^2419
+  Hopfield cap  = floor(0.14*N) = 338 patterns
+
+Sensitivity metrics
+  verdict                 : STABLE
+  S = max|dE/dparam|/<E> : 0.0000  (threshold 0.05)
+  <E> across (h,d) grid   : 308.00
+  sigma(E)                : 0.00
+  max |dE/dh|             : 0.000  (per added Hopfield kick)
+  max |dE/dd|             : 0.00000  (per added dynamic step)
+  rel Hamming  d_H / N    : 0.8161  (Lyapunov-spread surrogate)
+
+Physical regime
+  Quasi-stable regime.
+  Below sensitivity threshold but non-trivial mean energy. Landscape is shallow
+  enough that protocol perturbations average out.

@@ -1,0 +1,92 @@
+{
+  "courses": 184,
+  "slots": 10,
+  "trained": 23,
+  "verdict": "STABLE",
+  "normalized_sensitivity": 0.0,
+  "mean_clashes": 0.0,
+  "std_clashes": 0.0,
+  "mean_sensitivity_h": 0.0,
+  "mean_sensitivity_d": 0.0,
+  "max_sensitivity_h": 0.0,
+  "max_sensitivity_d": 0.0,
+  "relative_hamming": 0.33768115942028987,
+  "runtime_seconds": 30.406752109527588,
+  "grid_h": [
+    0,
+    1,
+    2,
+    5,
+    10
+  ],
+  "grid_d": [
+    100,
+    250,
+    500
+  ],
+  "grid": {
+    "h=0,d=100": 0,
+    "h=0,d=250": 0,
+    "h=0,d=500": 0,
+    "h=1,d=100": 0,
+    "h=1,d=250": 0,
+    "h=1,d=500": 0,
+    "h=2,d=100": 0,
+    "h=2,d=250": 0,
+    "h=2,d=500": 0,
+    "h=5,d=100": 0,
+    "h=5,d=250": 0,
+    "h=5,d=500": 0,
+    "h=10,d=100": 0,
+    "h=10,d=250": 0,
+    "h=10,d=500": 0
+  },
+  "extras": {
+    "shift": {
+      "1": 412,
+      "2": 38,
+      "3": 50,
+      "5": 6,
+      "7": 0,
+      "9": 0
+    },
+    "train": {
+      "0": 0,
+      "3": 0,
+      "6": 0,
+      "9": 0,
+      "12": 0,
+      "15": 0,
+      "18": 0,
+      "23": 0,
+      "25": 0
+    },
+    "conv": {
+      "0": {
+        "min_clashes": 0,
+        "best_step": 30,
+        "final_clashes": 0
+      },
+      "2": {
+        "min_clashes": 0,
+        "best_step": 30,
+        "final_clashes": 0
+      },
+      "5": {
+        "min_clashes": 0,
+        "best_step": 30,
+        "final_clashes": 0
+      },
+      "10": {
+        "min_clashes": 0,
+        "best_step": 30,
+        "final_clashes": 0
+      },
+      "20": {
+        "min_clashes": 0,
+        "best_step": 63,
+        "final_clashes": 0
+      }
+    }
+  }
+}

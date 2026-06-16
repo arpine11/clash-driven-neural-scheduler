@@ -1,0 +1,19 @@
+Sensitivity analysis - full Toronto-benchmark comparison
+====================================================================================
+SENSITIVE verdict if normalized_sensitivity S > 0.05
+
+dataset          N    P    verdict        S      <E>   sigma     dH/N
+------------------------------------------------------------------------------------
+sta-f-83       139   13     STABLE    0.000     0.00    0.00    0.016
+ute-s-92       184   10     STABLE    0.000     0.00    0.00    0.338
+car-s-91       682   35     STABLE    0.047   297.17   15.50    0.861
+pur-s-93      2419   42     STABLE    0.000   308.00    0.00    0.816
+hec-s-92        81   18  SENSITIVE    1.000     2.00    3.40    0.709
+uta-s-92       622   35     STABLE    0.012   169.50    2.33    0.872
+car-f-92       543   32     STABLE    0.036   179.73    8.23    0.890
+ear-f-83       190   22  SENSITIVE    0.328    36.53    6.34    0.857
+lse-f-91       381   18  SENSITIVE    0.556    21.60    7.67    0.752
+kfu-s-93       461   20  SENSITIVE    0.294    11.33    5.09    0.635
+yor-f-83       181   21  SENSITIVE    0.544    33.07   10.12    0.918
+rye-s-93       486   23  SENSITIVE    1.180    11.87    7.85    0.872
+tre-s-92       261   23  SENSITIVE    0.641    40.53    8.31    0.872

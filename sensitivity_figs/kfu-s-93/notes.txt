@@ -1,0 +1,38 @@
+kfu-s-93
+========
+
+Configuration
+  N courses     = 461
+  P slots       = 20  (torus T^N, cyclic period P)
+  state-space   ~ P^N = 20^461
+  Hopfield cap  = floor(0.14*N) = 64 patterns
+
+Sensitivity metrics
+  verdict                 : SENSITIVE
+  S = max|dE/dparam|/<E> : 0.2941  (threshold 0.05)
+  <E> across (h,d) grid   : 11.33
+  sigma(E)                : 5.09
+  max |dE/dh|             : 3.333  (per added Hopfield kick)
+  max |dE/dd|             : 0.16000  (per added dynamic step)
+  rel Hamming  d_H / N    : 0.6349  (Lyapunov-spread surrogate)
+
+Physical regime
+  Metastable regime with partial basin switching.
+  Outcome sensitive to (h, d); only a fraction of degrees of freedom flip
+  between protocols. Mixed glassy / locally rigid behavior.
+
+Kick-amplitude (shift) sweep at (h=5, d=500)
+  E(K=1) = 2314   E(K=19) = 10   ratio = 231.40
+  Strong Chirikov-like transition: small kicks trap the system,
+  large kicks unlock ergodic mixing.
+
+Storage-depth sweep at (h=5, d=500)
+  optimal p ~= 6  (E_min = 8)
+  capacity wall alpha_c*N = 64 -> spurious-minima crossover.
+
+Convergence traces (d=500)
+  h= 0  E_min =   10  at t =   38  E_final =   40
+  h= 2  E_min =   10  at t =   38  E_final =   74
+  h= 5  E_min =   10  at t =   38  E_final =   54
+  h=10  E_min =   10  at t =   38  E_final =   60
+  h=20  E_min =   16  at t =   37  E_final =   62

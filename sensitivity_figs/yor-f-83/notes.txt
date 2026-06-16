@@ -1,0 +1,39 @@
+yor-f-83
+========
+
+Configuration
+  N courses     = 181
+  P slots       = 21  (torus T^N, cyclic period P)
+  state-space   ~ P^N = 21^181
+  Hopfield cap  = floor(0.14*N) = 25 patterns
+
+Sensitivity metrics
+  verdict                 : SENSITIVE
+  S = max|dE/dparam|/<E> : 0.5444  (threshold 0.05)
+  <E> across (h,d) grid   : 33.07
+  sigma(E)                : 10.12
+  max |dE/dh|             : 18.000  (per added Hopfield kick)
+  max |dE/dd|             : 0.20000  (per added dynamic step)
+  rel Hamming  d_H / N    : 0.9175  (Lyapunov-spread surrogate)
+
+Physical regime
+  Strongly chaotic / ergodic regime.
+  ~92% of courses land in different slots across (h, d) configs.
+  Trajectories explore many basins; final attractor is protocol-selected.
+  Discrete-state analog of fully developed chaos (positive Lyapunov spread).
+
+Kick-amplitude (shift) sweep at (h=5, d=500)
+  E(K=1) = 698   E(K=20) = 26   ratio = 26.85
+  Strong Chirikov-like transition: small kicks trap the system,
+  large kicks unlock ergodic mixing.
+
+Storage-depth sweep at (h=5, d=500)
+  optimal p ~= 12  (E_min = 20)
+  capacity wall alpha_c*N = 25 -> spurious-minima crossover.
+
+Convergence traces (d=500)
+  h= 0  E_min =   30  at t =  196  E_final =   80
+  h= 2  E_min =   12  at t =  325  E_final =   66
+  h= 5  E_min =   26  at t =  278  E_final =   84
+  h=10  E_min =   26  at t =  269  E_final =  104
+  h=20  E_min =   30  at t =   76  E_final =   94

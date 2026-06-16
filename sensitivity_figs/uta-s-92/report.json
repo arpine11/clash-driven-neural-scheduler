@@ -1,0 +1,41 @@
+{
+  "courses": 622,
+  "slots": 35,
+  "trained": 23,
+  "verdict": "STABLE",
+  "normalized_sensitivity": 0.011799410029498525,
+  "mean_clashes": 169.5,
+  "std_clashes": 2.327373340628157,
+  "mean_sensitivity_h": 0.8148148148148148,
+  "mean_sensitivity_d": 0.03,
+  "max_sensitivity_h": 2.0,
+  "max_sensitivity_d": 0.12,
+  "relative_hamming": 0.8722595732242033,
+  "runtime_seconds": 61.39275884628296,
+  "grid_h": [
+    0,
+    1,
+    2,
+    5
+  ],
+  "grid_d": [
+    50,
+    100,
+    200
+  ],
+  "grid": {
+    "h=0,d=50": 170,
+    "h=0,d=100": 168,
+    "h=0,d=200": 168,
+    "h=1,d=50": 170,
+    "h=1,d=100": 168,
+    "h=1,d=200": 168,
+    "h=2,d=50": 170,
+    "h=2,d=100": 170,
+    "h=2,d=200": 166,
+    "h=5,d=50": 176,
+    "h=5,d=100": 170,
+    "h=5,d=200": 170
+  },
+  "extras": {}
+}

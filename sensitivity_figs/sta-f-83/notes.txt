@@ -1,0 +1,38 @@
+sta-f-83
+========
+
+Configuration
+  N courses     = 139
+  P slots       = 13  (torus T^N, cyclic period P)
+  state-space   ~ P^N = 13^139
+  Hopfield cap  = floor(0.14*N) = 19 patterns
+
+Sensitivity metrics
+  verdict                 : STABLE
+  S = max|dE/dparam|/<E> : 0.0000  (threshold 0.05)
+  <E> across (h,d) grid   : 0.00
+  sigma(E)                : 0.00
+  max |dE/dh|             : 0.000  (per added Hopfield kick)
+  max |dE/dd|             : 0.00000  (per added dynamic step)
+  rel Hamming  d_H / N    : 0.0157  (Lyapunov-spread surrogate)
+
+Physical regime
+  Single-well / frozen regime.
+  Energy landscape has a global E=0 minimum that all trajectories reach
+  independent of (h, d). No protocol can perturb the outcome; this instance
+  is over-constrained-friendly and trivial from a dynamical viewpoint.
+
+Kick-amplitude (shift) sweep at (h=5, d=500)
+  E(K=1) = 0   E(K=12) = 0   ratio = 0.00
+  Weak K-dependence: system is either already ergodic or already trapped
+  in the same basin family for all K.
+
+Storage-depth sweep at (h=5, d=500)
+  Hopfield basins do not align with feasible region; storage hurts.
+
+Convergence traces (d=500)
+  h= 0  E_min =    0  at t =    1  E_final =    0
+  h= 2  E_min =    0  at t =    1  E_final =    0
+  h= 5  E_min =    0  at t =    1  E_final =    0
+  h=10  E_min =    0  at t =    1  E_final =    0
+  h=20  E_min =    0  at t =    1  E_final =    0
